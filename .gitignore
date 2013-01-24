@@ -1,0 +1,6 @@
+.idea
+target/
+hooks-bugzilla.iml
+.classpath
+.project
+.settings
