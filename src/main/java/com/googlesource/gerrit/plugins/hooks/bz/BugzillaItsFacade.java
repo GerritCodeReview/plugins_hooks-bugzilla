@@ -108,7 +108,7 @@ public class BugzillaItsFacade implements ItsFacade {
         return bugId;
       }});
   }
-  
+
   private void doPerformAction(final String bugId, final String fieldName, final String fieldValue)
       throws BugzillaException, IOException {
     String actionKey = null;
