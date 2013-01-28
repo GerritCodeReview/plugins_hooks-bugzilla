@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "O7lQPDDs",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1010813
+      },
+      "writtenOn": "2013-01-28T19:29:42Z",
+      "side": 1,
+      "message": "While we\u0027re here, we should probably fix this. Not sure on appropriate values, but it\u0027s not GerritForge :)",
+      "revId": "8d1ecbfa45e7a81cd945072fadada58b7d956680",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
