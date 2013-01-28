@@ -16,6 +16,24 @@
       "revId": "8d1ecbfa45e7a81cd945072fadada58b7d956680",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "O3QWNkos",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1012155
+      },
+      "writtenOn": "2013-01-28T23:02:40Z",
+      "side": 1,
+      "message": "This shade plugin configuration comes straight from Ice9186b4d1fef6add7408e5018d6254dfa225a18\n(the Bugzilla addition to the hooks-jira project, see hooks-bugzilla/pom.xml)\n\nEventually, they seem to stem from hooks-jira/pom.xml from the hooks-jira plugin.\n\nFor the Manifest file, those lines are not needed.\nAre we allowed to remove them?",
+      "parentUuid": "O7lQPDDs",
+      "revId": "8d1ecbfa45e7a81cd945072fadada58b7d956680",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
