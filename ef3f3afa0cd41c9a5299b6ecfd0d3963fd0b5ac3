@@ -16,6 +16,24 @@
       "revId": "ef3f3afa0cd41c9a5299b6ecfd0d3963fd0b5ac3",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "Shd1qi8g",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1012155
+      },
+      "writtenOn": "2013-03-25T19:26:56Z",
+      "side": 1,
+      "message": "As this this whitespace problem has not been introduced/touched\nby this change, I fixed in a separate follow-up change:\nI8f0174551b757b35d6ab8d5eed32f15778601851",
+      "parentUuid": "Si-cTIGU",
+      "revId": "ef3f3afa0cd41c9a5299b6ecfd0d3963fd0b5ac3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
