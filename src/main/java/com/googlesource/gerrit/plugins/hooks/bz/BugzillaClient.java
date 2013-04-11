@@ -64,7 +64,11 @@ public class BugzillaClient {
   }
 
   public Bug getBug(String bugId) throws BugzillaException {
-    return getBug(Integer.parseInt(bugId));
+    try {
+	  return getBug(Integer.parseInt(bugId));
+    } catch(NumberFormatException nfe) {
+    	return null;
+    }
   }
 
   public void addComment(String bugId, String comment) throws BugzillaException {
