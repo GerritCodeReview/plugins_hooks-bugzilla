@@ -14,24 +14,26 @@
 
 package com.googlesource.gerrit.plugins.hooks.bz;
 
-import com.google.gerrit.pgm.init.InitStep;
+import com.google.gerrit.pgm.init.AllProjectsConfig;
 import com.google.gerrit.pgm.init.Section;
-import com.google.gerrit.pgm.init.Section.Factory;
 import com.google.gerrit.pgm.util.ConsoleUI;
 import com.google.inject.Inject;
-import com.google.inject.Injector;
 import com.google.inject.Singleton;
+
 import com.googlesource.gerrit.plugins.hooks.its.InitIts;
 import com.googlesource.gerrit.plugins.hooks.validation.ItsAssociationPolicy;
 import com.j2bugzilla.base.BugzillaException;
 import com.j2bugzilla.base.ConnectionException;
 
+import org.eclipse.jgit.errors.ConfigInvalidException;
+
+import java.io.IOException;
+
 /** Initialize the GitRepositoryManager configuration section. */
 @Singleton
-class InitBugzilla extends InitIts implements InitStep {
+class InitBugzilla extends InitIts {
   private static final String BUGZILLA_SECTION = "bugzilla";
-  private final ConsoleUI ui;
-  private final Factory sections;
+  private final Section.Factory sections;
   private Section bugzilla;
   private Section bugzillaComment;
   private String bugzillaUrl;
@@ -39,12 +41,15 @@ class InitBugzilla extends InitIts implements InitStep {
   private String bugzillaPassword;
 
   @Inject
-  InitBugzilla(final ConsoleUI ui, final Injector injector, final Section.Factory sections) {
+  InitBugzilla(ConsoleUI ui, Section.Factory sections,
+      AllProjectsConfig allProjectsConfig) {
+    super(BugzillaItsFacade.ITS_NAME_BUGZILLA, "Bugzilla", ui, allProjectsConfig);
     this.sections = sections;
-    this.ui = ui;
   }
 
-  public void run() {
+  public void run() throws IOException, ConfigInvalidException {
+    super.run();
+
     this.bugzilla = sections.get(BUGZILLA_SECTION, null);
     this.bugzillaComment = sections.get(COMMENT_LINK_SECTION, BUGZILLA_SECTION);
 
@@ -54,7 +59,7 @@ class InitBugzilla extends InitIts implements InitStep {
     do {
       enterBugzillaConnectivity();
     } while (bugzillaUrl != null
-        && (isConnectivityRequested(ui, bugzillaUrl) && !isBugzillaConnectSuccessful()));
+        && (isConnectivityRequested(bugzillaUrl) && !isBugzillaConnectSuccessful()));
 
     if (bugzillaUrl == null) {
       return;
