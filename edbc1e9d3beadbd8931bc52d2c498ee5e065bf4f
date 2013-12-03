@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "83d09a10_a1a7be3a",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2013-12-03T06:17:48Z",
+      "side": 1,
+      "message": "The example answer is just ENTER, means taking the default which is \u0027Y\u0027. It\u0027s the same below for all other questions where the default is taken.",
+      "parentUuid": "e3c15653_d4fb9cec",
+      "revId": "edbc1e9d3beadbd8931bc52d2c498ee5e065bf4f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c3be12c6_b3ee382c",
         "filename": "src/main/resources/Documentation/config.md",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2013-12-03T06:13:42Z",
       "side": 1,
       "message": "Like here.",
+      "range": {
+        "startLine": 103,
+        "startChar": 42,
+        "endLine": 103,
+        "endChar": 43
+      },
+      "revId": "edbc1e9d3beadbd8931bc52d2c498ee5e065bf4f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83d09a10_c1a4c238",
+        "filename": "src/main/resources/Documentation/config.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2013-12-03T06:17:48Z",
+      "side": 1,
+      "message": "Here the answer is needed because \u0027y\u0027 is not the default.",
+      "parentUuid": "c3be12c6_b3ee382c",
       "range": {
         "startLine": 103,
         "startChar": 42,
