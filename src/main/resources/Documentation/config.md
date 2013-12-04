@@ -36,6 +36,20 @@ On the project info screen there is a dropdown list for the
 parameter and save it. If the Bugzilla integration is enforced by a
 parent project the dropdown list is disabled.
 
+To limit the Bugzilla integration to certain branches one or many refs,
+ref patterns or regular expressions can be specified as
+`plugin.bugzilla.branch`.
+
+E.g. to limit the Bugzilla integration to the `master` branch and all
+stable branches the following could be configured.:
+
+```
+  [plugin "bugzilla"]
+    enabled = true
+    branch = refs/heads/master
+    branch = ^refs/heads/stable-.*
+```
+
 Comment links
 ----------------
 
