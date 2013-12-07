@@ -134,6 +134,10 @@ limitations under the License.
       <id>gerrit-maven</id>
       <url>https://gerrit-maven.commondatastorage.googleapis.com</url>
     </repository>
+    <repository>
+      <id>gerrit-api-repository</id>
+      <url>https://gerrit-api.commondatastorage.googleapis.com/snapshot/</url>
+    </repository>
   </repositories>
 
 </project>
