@@ -52,6 +52,24 @@
       "revId": "067120ba86fb66c013b12e4a4b25d0731416091b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c3a7f221_eb1f7140",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-12-09T12:37:41Z",
+      "side": 1,
+      "message": "\u003e Hahaha :-)\n\n;-)\n\n\u003e But I\u0027ll gladly merge the build.md without this paragraph.\n\nOK. could you adjust it? and remove the section, you don\u0027t like?\n\n\u003e Is there?\n\nNo that i am aware of. The way to go would be to tag/branch a released versions of the hook-* plugins, that correspond to official Gerrit release, like it is the case with Gerrit\u0027s own core plugin.",
+      "parentUuid": "c3a7f221_4b9cc580",
+      "revId": "067120ba86fb66c013b12e4a4b25d0731416091b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
