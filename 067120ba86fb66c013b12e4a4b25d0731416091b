@@ -16,6 +16,24 @@
       "revId": "067120ba86fb66c013b12e4a4b25d0731416091b",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c3a7f221_8bcceda5",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2013-12-09T09:41:21Z",
+      "side": 1,
+      "message": "The only alternative not to provide any documentation how to build sucks less?",
+      "parentUuid": "c3a7f221_4b6e85d4",
+      "revId": "067120ba86fb66c013b12e4a4b25d0731416091b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
