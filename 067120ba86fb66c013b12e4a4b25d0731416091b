@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c3a7f221_4b6e85d4",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012155
+      },
+      "writtenOn": "2013-12-09T09:31:01Z",
+      "side": 1,
+      "message": "This is not correct. Just replacing the API version will typically not\nbuild, as mostly the API gets changed to get new upstream features\nin.\n\nUnless we do proper releases of the hooks-* plugins, there is no\none-size-fits-all to get the plugin built against a released upstream\ngerrit. :-/",
+      "revId": "067120ba86fb66c013b12e4a4b25d0731416091b",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
