@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c3a7f221_6b9f0177",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1012155
+      },
+      "writtenOn": "2013-12-09T11:59:27Z",
+      "side": 1,
+      "message": "I cannot find the gerrit-plugin-api 2.9-SNAPSHOT in this repository.\n\nWhat problem is solved by adding this repository?",
+      "revId": "79c90b111a88562399ae7064e4887cf680c195ea",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
